@@ -11,10 +11,11 @@ public class LibraryFine {
 			return fine;
 		}
 		if(y1 == y2) {
-			if(m1!=m2) {
+			if(m1>m2) {
 				fine = 500*(m1-m2);
 				return fine;
-			} else {
+			}else if(m1<m2) {fine = 0;return fine;}
+			else {
 				if(d1<=d2) {
 					fine = 0;
 					return fine;
